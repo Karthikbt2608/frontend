@@ -25,7 +25,7 @@ const Login = () => {
                     </div>
                     <div className="signUp_button d-flex align-items-center">
                         <p>Are you a new user?</p>
-                        <Link className="btn btn-outline-primary" to="/register">Signn up</Link>
+                        <Link className="btn btn-outline-primary" to="/Signup">Signn up</Link>
                     </div>
                 </form>
             </div>
