@@ -1,4 +1,4 @@
-
+import '../styles/register.css'
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
@@ -27,12 +27,13 @@ const Register = () => {
         }
     }
     return (
-        <div className="signUp container">
-            <div className="card mt-5 px-5">
+      <div className="sign1">
+         
+            
                 <div className="card-body">
                     <h1 className="text-center">Sign Up</h1>
                     <form action="" onSubmit={handleSubmit} >
-                        <div className="form-group px-5">
+                        <div className="form-group w-25 px-5" id='sign2'>
                             <div className="name my-4">
                                 <input
                                     className="form-control"
@@ -94,7 +95,7 @@ const Register = () => {
                             <div className="registerButton my-4">
                                 <p>Already having an account?</p>
                                 <Link
-                                    to="/"
+                                    to="/login"
                                     className="btn btn-outline-primary px-5"
                                 >
                                     Login
@@ -103,8 +104,9 @@ const Register = () => {
                         </div>
                     </form>
                 </div>
-            </div>
-        </div>
+           
+       
+      </div>
     );
 }
 
